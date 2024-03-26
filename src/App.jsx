@@ -4,7 +4,7 @@ import Countries from './components/Countries/Countries'
 function App() {
   return (
     <>
-      <h1>Meheraz + React</h1>
+      <h1>Rest Countries</h1>
       <Countries></Countries>
     </>
   )
