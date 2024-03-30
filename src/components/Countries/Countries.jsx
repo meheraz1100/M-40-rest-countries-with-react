@@ -13,13 +13,14 @@ const Countries = () => {
     }, [])
     return (
         <div>
-            <h3>Countries : {countries.length}</h3>
+            <h3>Total Countries : {countries.length}</h3>
             <div className="country-container">
                 {
                     countries.map(country => <Country country={country}></Country>)
                 }
             </div>
         </div>
+        
     );
 };
 
