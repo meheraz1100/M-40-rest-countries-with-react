@@ -1,8 +1,16 @@
-
-const CountryDetail = () => {
+import CountryData from '../Countrydata/CountryData'
+const CountryDetail = (props) => {
+    const {country, handleVisitedCountry, handleVisitedFlags} = props;
     return (
         <div>
-            <h4>Coutry Details</h4>            
+            <h4>Country Details</h4>
+            <hr />
+            {/* <CountryData
+            country={country}
+            handleVisitedCountry={handleVisitedCountry}
+            handleVisitedFlags={handleVisitedFlags}
+            ></CountryData> */}
+            <CountryData {...props}></CountryData>
         </div>
     );
 };
